@@ -2,8 +2,8 @@ import { useState,useEffect } from "react"
 
 function Events() {
     const [events, setEvent] = useState(null)
-    const URL = process.env.REACT_APP_API_URL + '/event'
-
+    const URL = process.env.REACT_APP_API_URL + 'event'
+    console.log(URL)
     function getEvent(){
         try{
             fetch(URL)
@@ -12,7 +12,7 @@ function Events() {
         } catch(error){
             console.log(error)
         }
-    }
+    } 
     useEffect(()=>{
         getEvent()
     },[])
@@ -28,18 +28,18 @@ function Events() {
     function loaded(){
         return (
             <div className="events">
-                {events.map((event)=>{
+                {events.map((event)=>(
                     <div>
                         <h1>{event.title}</h1>
                         <img src={event.image} className="eventImage"/>
                         <p>{event.content}</p>
                         <p>{event.location} {event.time}</p>
                     </div>
-                })}
+                ))}
             </div>
         )
     }
-    events ? loaded() : loading()
+    return events ? loaded() : loading()
 }
 
 export default Events
