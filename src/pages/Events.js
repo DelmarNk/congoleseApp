@@ -1,9 +1,16 @@
 import { useState,useEffect } from "react"
+import { Link } from "react-router-dom"
 
 function Events() {
     const [events, setEvent] = useState(null)
+    const [newForm, setForm] = useState({
+        content: "",
+        image: "",
+        content: "",
+        title: "",
+        time: Date
+    })
     const URL = process.env.REACT_APP_API_URL + 'event'
-    console.log(URL)
     function getEvent(){
         try{
             fetch(URL)
@@ -29,12 +36,14 @@ function Events() {
         return (
             <div className="events">
                 {events.map((event)=>(
-                    <div>
-                        <h1>{event.title}</h1>
-                        <img src={event.image} className="eventImage"/>
-                        <p>{event.content}</p>
-                        <p>{event.location} {event.time}</p>
-                    </div>
+                    <Link to={`/${event._id}`}>
+                        <div>
+                            <h1>{event.title}</h1>
+                            <img src={event.image} className="eventImage"/>
+                            <p>{event.content}</p>
+                            <p>{event.location} {event.time}</p>
+                        </div>
+                    </Link>
                 ))}
             </div>
         )
