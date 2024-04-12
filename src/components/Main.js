@@ -8,7 +8,7 @@ function Main() {
     <div>
         <Routes>
             <Route path="/" element={<Events />}/>
-            <Route path="/id" element={<Show />}/>
+            <Route path="/:id" element={<Show />}/>
             <Route path="/update/:id" element={<Update />}/>
         </Routes>
     </div>

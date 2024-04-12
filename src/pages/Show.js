@@ -6,6 +6,7 @@ function Show() {
   const {id} = useParams()
   const [event, setEvent] = useState(null)
   const URL = process.env.REACT_APP_API_URL + `event/${id}`
+  console.log(URL)
   const navigate = useNavigate()
   function deleteEvent(){
     try{
