@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link, useParams, useNavigate} from "react-router-dom"
 
-
 function Show() {
   const {id} = useParams()
   const [event, setEvent] = useState(null)
@@ -53,6 +52,8 @@ function Show() {
             <p className="time">{event.time}</p>
           </div>
           <button onClick={deleteEvent}>Delete Event</button>
+          <Link to={`/create/${id}`}><button className="createEvent">+</button></Link> 
+          <Link to={`/update/${id}`}><button className="updateEvent">Update</button></Link>
         </div>
     )
 }
