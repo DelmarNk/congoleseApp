@@ -1,15 +1,9 @@
 import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
+import './events.css'
 
 function Events() {
     const [events, setEvent] = useState(null)
-    const [newForm, setForm] = useState({
-        content: "",
-        image: "",
-        content: "",
-        title: "",
-        time: Date
-    })
     const URL = process.env.REACT_APP_API_URL + 'event'
     function getEvent(){
         try{
@@ -36,12 +30,13 @@ function Events() {
         return (
             <div className="events">
                 {events.map((event)=>(
-                    <Link to={`/${event._id}`}>
-                        <div>
-                            <h1>{event.title}</h1>
+                    <Link style={{ textDecoration: 'none', color: 'rgba(217, 217, 217, 1)' }} to={`/${event._id}`}>
+                        <div className="event">
+                            <h2 className="eventTitle">{event.title}</h2>
                             <img src={event.image} className="eventImage"/>
-                            <p>{event.content}</p>
-                            <p>{event.location} {event.time}</p>
+                            <p className="eventContent">{event.content}</p>
+                            <p className="eventLocation">{event.location}</p>
+                            <p className="eventTime">{event.time}</p>
                         </div>
                     </Link>
                 ))}
