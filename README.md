@@ -6,7 +6,7 @@ This app can be used by anyone who wants to know about the Congolese events happ
 
 # Wireframe
 
-[figma](https://www.figma.com/file/heSg0C8Ab7PhQk3AMxnoQ1/Untitled?type=design&node-id=0-1&mode=design&t=ICWl1SCP7SeuRWPj-0)
+[Figma](https://www.figma.com/file/heSg0C8Ab7PhQk3AMxnoQ1/Untitled?type=design&node-id=0-1&mode=design&t=ICWl1SCP7SeuRWPj-0)
 
 # Live Site
 
