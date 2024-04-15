@@ -11,7 +11,7 @@ function Main() {
             <Route path="/" element={<Events />}/>
             <Route path="/:id" element={<Show />}/>
             <Route path="/update/:id" element={<Update />}/>
-            <Route path="/create/:id" element={<Create />} />
+            <Route path="/create" element={<Create />} />
         </Routes>
   )
 }

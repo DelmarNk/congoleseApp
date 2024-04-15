@@ -56,7 +56,7 @@ function Show() {
               <Link to={`/update/${id}`}><button className="updateEvent">update</button></Link>
             </div>
             <Link to={`/`}><button className="home">back</button></Link>
-            <Link to={`/create/${id}`}><button className="createEvent">+</button></Link> 
+            <Link to={`/create`}><button className="createEvent">+</button></Link> 
           </div>
         </div>
     )

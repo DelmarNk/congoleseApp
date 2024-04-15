@@ -4,12 +4,12 @@
     width: 90%;
     padding-left: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 1000%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 30px;
 }
 
 .event{
@@ -71,4 +71,7 @@
     .event{
       width: 500px;
     }
+  }
+  .createEvents{
+    margin-top: 100px;
   }
