@@ -29,7 +29,19 @@ hr{
   padding-top: 10px;
   color: rgba(216, 36, 36, 1);
 }
-
+.flag{
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  padding-top: 5px;
+}
+.headContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 45px;
+}
 
 
 

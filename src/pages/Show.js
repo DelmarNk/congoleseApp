@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link, useParams, useNavigate} from "react-router-dom"
+import './show.css'
 
 function Show() {
   const {id} = useParams()
@@ -41,18 +42,22 @@ function Show() {
   }
   function loaded(){
     return (
-        <div className="event">
-          <p>About this event</p>
+        <div className="eventShow">
           <div className="eventContainer">
-            <p className="content">{event.content}</p>
-            <img src={event.image} className="eventImg"/>
-            <p className="location"></p>
-            <h1>{event.title}</h1>
-            <p className="time">{event.time}</p>
+            <h1 className="tilteShow">{event.title}</h1>
+              <p className="contentShow">{event.content}</p>
+              <img src={event.image} className="eventImg"/>
+              <p className="locationShow">Location: {event.location}</p>
+              <p className="timeShow">Time: {event.time}</p>
           </div>
-          <button onClick={deleteEvent}>Delete Event</button>
-          <Link to={`/create/${id}`}><button className="createEvent">+</button></Link> 
-          <Link to={`/update/${id}`}><button className="updateEvent">Update</button></Link>
+          <div className="buttonsShow">
+            <div className="createDelete">
+              <button className="deleteEvent" onClick={deleteEvent}>delete</button>
+              <Link to={`/update/${id}`}><button className="updateEvent">update</button></Link>
+            </div>
+            <Link to={`/`}><button className="home">back</button></Link>
+            <Link to={`/create/${id}`}><button className="createEvent">+</button></Link> 
+          </div>
         </div>
     )
 }
