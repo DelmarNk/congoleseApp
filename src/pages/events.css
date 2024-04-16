@@ -7,8 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-top: 30px;
+    height: 100%;
+    margin-top: 100px;
 }
 
 .spinner{
@@ -37,40 +37,52 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     overflow: hidden;
-    -webkit-box-orient: vertical
+    -webkit-box-orient: vertical;
+    margin-bottom: -100px;
 }
 .eventContent{
-    margin-top: -8px;
+    margin-top: -100px;
+    margin-bottom: -8px;
     color: rgba(217, 217, 217, 0.70);
     font-size: 15px;
+    width: 65%;
 }
 
-.eventDetails{
-  width: 110%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .eventLocation{
-    color: rgba(134, 134, 134, 1);
     font-size: 12px;
-    margin-bottom: 7px;
-    width: 200px;
+    position: relative;
+    left: 23%;
+    top: 22px;
+    width: fit-content;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    align-self: self-end;
+    color: rgba(183, 182, 182, 0.7);
+    background-color: rgb(25, 25, 25);
+    padding: 8px;
+    border-radius: 5px;
 }
 .eventTime{
-    color: rgba(217, 217, 217, 0.70);
-    background-color: black;
-    padding: 5px;
+  color: rgba(183, 182, 182, 0.7);
+    background-color: rgb(25, 25, 25);
+    padding: 8px;
     border-radius: 5px;
     width: fit-content;
     margin-top: -20px;
     margin-bottom: 5px;
     font-size: 12px;
+}
+
+.eventImage{
+  width: 32%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  position: relative;
+  left: 68%;
+  margin-bottom: 10px;
+  margin-top: -50px;
 }
 
 @media screen and (max-width: 600px){
@@ -83,3 +95,4 @@
       width: 500px;
     }
   }
+
