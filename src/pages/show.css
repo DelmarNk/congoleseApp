@@ -4,6 +4,12 @@
     height: 100vh;
     justify-content: center;
 }
+
+.spinner{
+    width: 100px;
+    height: 100px;
+  }
+  
 .eventContainer{
     display: flex;
     flex-direction: column;

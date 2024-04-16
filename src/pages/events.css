@@ -11,6 +11,11 @@
     margin-top: 30px;
 }
 
+.spinner{
+  width: 100px;
+  height: 100px;
+}
+
 .event{
     display: flex;
     flex-direction: column;
