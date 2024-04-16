@@ -12,7 +12,7 @@ body{
 .header{
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  justify-content: space-between;
   width: 100%;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);

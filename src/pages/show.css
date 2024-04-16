@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin-top: 80px;
+    margin-top: 120px;
     padding: 10px;
     color: rgba(217, 217, 217, 1);
     font-family: Arial, Helvetica, sans-serif;
@@ -36,22 +36,19 @@
     align-items: center;
 }
 .deleteEvent, .updateEvent{
-    background-color: rgba(208, 178, 18, 1);
+    background-color: rgb(170, 153, 5);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(128, 128, 128, 0.443) inset;
     border: solid 0.1px rgba(170, 170, 170, 0.545);
     height: 38px;
     border-radius: 50px;
-    background-image: linear-gradient(180deg,rgb(193, 193, 90),rgb(104, 104, 23));
     box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
     font-size: 25px;
-}
-.updateEvent{
-  
-}
-.deleteEvent{
-    width: 60%;
     border: 1px solid red;
+    width: 300px;
+}
+
+.deleteEvent{
     margin-top: 20px;
 }
 .createEvent{
@@ -66,6 +63,7 @@
     border-radius: 30px;
     font-size: 30px;
     cursor: pointer;
+    text-align: center;
 }
 .backArrow{
     position: absolute;
