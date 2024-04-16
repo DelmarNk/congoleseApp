@@ -36,7 +36,7 @@ function Events() {
                             <img src={event.image} className="eventImage"/>
                             <p className="eventContent">{event.content}</p>
                             <p className="eventLocation">{event.location}</p>
-                            <p className="eventTime">{event.time}</p>
+                            <p className="eventTime">{new Date(event.time).toDateString()}</p>
                         </div>
                     </Link>
                 ))}
