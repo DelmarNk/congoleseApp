@@ -44,25 +44,32 @@
     color: rgba(217, 217, 217, 0.70);
     font-size: 15px;
 }
+
+.eventDetails{
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .eventLocation{
     color: rgba(134, 134, 134, 1);
     font-size: 12px;
-    display: flex;
-    flex-direction: column-reverse;
     margin-bottom: 7px;
     width: 200px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     overflow: hidden;
-    -webkit-box-orient: vertical
-
+    -webkit-box-orient: vertical;
+    align-self: self-end;
 }
 .eventTime{
-    color: rgba(134, 134, 134, 1);
+    color: rgba(217, 217, 217, 0.70);
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
     margin-top: -20px;
     margin-bottom: 5px;
-    display: flex;
-    justify-content: flex-end;
     font-size: 12px;
 }
 
@@ -75,7 +82,4 @@
     .event{
       width: 500px;
     }
-  }
-  .createEvents{
-    margin-top: 100px;
   }

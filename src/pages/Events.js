@@ -35,8 +35,10 @@ function Events() {
                             <h2 className="eventTitle">{event.title}</h2>
                             <img src={event.image} className="eventImage"/>
                             <p className="eventContent">{event.content}</p>
-                            <p className="eventLocation">{event.location}</p>
-                            <p className="eventTime">{new Date(event.time).toDateString()}</p>
+                            <div className="eventDetails">
+                                <p className="eventLocation">{event.location}</p>
+                                <p className="eventTime">{new Date(event.time).toDateString()}</p>
+                            </div>
                         </div>
                     </Link>
                 ))}
