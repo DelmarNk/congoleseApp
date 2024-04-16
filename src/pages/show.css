@@ -42,7 +42,7 @@
 }
 .deleteEvent, .updateEvent{
     color: black;
-    background-color: rgb(170, 153, 5);
+    background-color: rgba(216, 36, 36, 1);
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(128, 128, 128, 0.443) inset;
     border: solid 0.1px rgba(170, 170, 170, 0.545);
