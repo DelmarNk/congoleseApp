@@ -33,26 +33,46 @@
 .eventTilte{
     font-weight: lighter;
     color:  rgba(216, 36, 36, 1);
-    width: 200px;
+    width: 68%;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    margin-bottom: -100px;
+}
+
+.mid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 .eventContent{
-    margin-top: -100px;
-    margin-bottom: -8px;
     color: rgba(217, 217, 217, 0.70);
     font-size: 15px;
     width: 65%;
+}
+.eventImage{
+  width: 32%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: -15px;
+  margin-top: -40px;
+  position: relative;
+  top: -10px;
+}
+
+.eventHappen{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .eventLocation{
     font-size: 12px;
     position: relative;
-    left: 23%;
-    top: 22px;
+    top: 5px;
     width: fit-content;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -62,6 +82,7 @@
     background-color: rgb(25, 25, 25);
     padding: 8px;
     border-radius: 5px;
+    margin-right: 20px;
 }
 .eventTime{
   color: rgba(183, 182, 182, 0.7);
@@ -72,18 +93,12 @@
     margin-top: -20px;
     margin-bottom: 5px;
     font-size: 12px;
+    position: relative;
+    top: 18px;
 }
 
-.eventImage{
-  width: 32%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-  position: relative;
-  left: 68%;
-  margin-bottom: 10px;
-  margin-top: -50px;
-}
+
+
 
 @media screen and (max-width: 600px){
     .event{
