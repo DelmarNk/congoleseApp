@@ -52,8 +52,8 @@ function Show() {
           </div>
           <div className="buttonsShow">
             <div className="createDelete">
-              <Link to={`/update/${id}`}><button className="updateEvent">update</button></Link>
-              <button className="deleteEvent" onClick={deleteEvent}>delete</button>
+              <Link to={`/update/${id}`}><button className="updateEvent">Update</button></Link>
+              <button className="deleteEvent" onClick={deleteEvent}>Delete</button>
             </div>
             <Link to={`/`}><img className="backArrow" src="https://thumbs.dreamstime.com/t/red-arrow-animation-black-background-solid-vivid-red-color-red-arrow-animation-black-background-solid-vivid-red-color-213626686.jpg"/></Link>
             <Link to={`/create`}><button className="createEvent">+</button></Link> 
