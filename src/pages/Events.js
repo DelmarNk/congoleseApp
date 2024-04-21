@@ -32,7 +32,7 @@ function Events() {
                 {events.map((event)=>(
                     <Link style={{ textDecoration: 'none', color: 'rgba(217, 217, 217, 1)' }} to={`/${event._id}`}>
                         <div className="event">
-                            <h2 className="eventTitle" style={{ width: '68%', position: 'relative',  }}>{event.title}</h2>
+                            <h2 className="eventTitle" style={{ width: '68%', position: 'relative', fontWeight: '10', fontSize: '25px', color: 'rgba(217, 217, 217, 0.8)'  }}>{event.title}</h2>
                             <div className="mid">
                                 <p className="eventContent">{event.content}</p>
                                 <img src={event.image} className="eventImage"/>
