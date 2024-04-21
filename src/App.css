@@ -1,7 +1,7 @@
 body{
   margin: 0;
 }
-.App {
+.App, .loading{
   background-color: rgba(10, 10, 9, 1);
   margin-top: 0px;
   display: flex;

@@ -19,7 +19,7 @@ function Events() {
     },[])
 
     function loading(){
-        return <section className="peopleList"><h1>Hold on a sec...
+        return <section className="loading"><h1>Hold on a sec...
             <span>
                 <img className="spinner" src="https://freesvg.org/img/1544764567.png" />
             </span>
@@ -32,7 +32,7 @@ function Events() {
                 {events.map((event)=>(
                     <Link style={{ textDecoration: 'none', color: 'rgba(217, 217, 217, 1)' }} to={`/${event._id}`}>
                         <div className="event">
-                            <h2 className="eventTitle" style={{ width: '68%'}}>{event.title}</h2>
+                            <h2 className="eventTitle" style={{ width: '68%', position: 'relative',  }}>{event.title}</h2>
                             <div className="mid">
                                 <p className="eventContent">{event.content}</p>
                                 <img src={event.image} className="eventImage"/>

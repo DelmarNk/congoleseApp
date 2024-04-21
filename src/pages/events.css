@@ -33,7 +33,6 @@
 .eventTilte{
     font-weight: lighter;
     color:  rgba(216, 36, 36, 1);
-    width: 68%;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     overflow: hidden;
@@ -49,15 +48,15 @@
 .eventContent{
     color: rgba(217, 217, 217, 0.70);
     font-size: 15px;
-    width: 65%;
+    width: 58%;
 }
 .eventImage{
-  width: 32%;
-  aspect-ratio: 1/1;
+  width: 40%;
+  height: 130px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: -15px;
-  margin-top: -40px;
+  margin-top: -25px;
   position: relative;
   top: -10px;
 }
