@@ -27,6 +27,7 @@ body{
     color: rgba(217, 217, 217, .9);
     margin-left: 20px;
     font-size: 180%;
+    font-weight: bold;
 }
 
 .landingContent{
