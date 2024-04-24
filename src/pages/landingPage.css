@@ -21,7 +21,7 @@ body{
     height: 100vh;
     color: white;
     position: absolute;
-    background-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,.7) 68%, rgba(0,0,0,.4) 70%, rgba(1,0,0,0) 82%)
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,.7) 55%, rgba(0,0,0,.4) 65%, rgba(1,0,0,0) 70%)
 }
 .tagline{
     color: rgba(217, 217, 217, .9);
