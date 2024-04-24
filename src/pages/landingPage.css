@@ -10,7 +10,8 @@ body{
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-    background-size: 100vw 50vh;
+    background-size: 100vw 40vh;
+    filter: brightness(1.1);
     background-image: url('https://i2.pickpik.com/photos/145/321/225/parrot-red-bird-colorful-thumb.jpg');
 
 }
@@ -20,20 +21,19 @@ body{
     height: 100vh;
     color: white;
     position: absolute;
-    background-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,.7) 60%, rgba(0,0,0,.4) 70%, rgba(1,0,0,0) 75%)
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,.7) 68%, rgba(0,0,0,.4) 70%, rgba(1,0,0,0) 82%)
 }
 .tagline{
     color: rgba(217, 217, 217, .9);
-
     margin-left: 20px;
-    font-size: 230%;
+    font-size: 180%;
 }
 
 .landingContent{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 58%;
+    top: 45%;
     justify-content: center;
     align-items: center;
     margin-left: 20px;
@@ -46,10 +46,10 @@ body{
     color: rgba(217, 217, 217, 1);
     text-decoration: none;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     width: 90%;
-    height: 35px;
-
+    height: 40px;
+    padding-top: 5px;
 }
 .createAccount{
     color: rgba(216, 36, 36, 1);

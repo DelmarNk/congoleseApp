@@ -24,11 +24,13 @@ body{
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   position: fixed;
   margin-top: 0px;
   z-index: 2;
+  background: linear-gradient(to right, rgba(10, 10, 9, 1)30%, rgba(0, 0, 0, .7) 50%,rgb(5, 42, 5)75%  , green, yellow, red);
+
 }
 hr{
   width: 95%;
@@ -46,7 +48,7 @@ hr{
   width: 60px;
   height: 50px;
   object-fit: cover;
-  padding-top: 5px;
+  margin-top: 5px;
   border-radius: 5px;
 }
 .headContent{
