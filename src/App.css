@@ -25,12 +25,10 @@ body{
   justify-content: space-between;
   width: 100%;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(10px);
   position: fixed;
   margin-top: 0px;
   z-index: 2;
-  background: linear-gradient(to right, rgba(10, 10, 9, 1)30%, rgba(0, 0, 0, .7) 50%,rgb(5, 42, 5)75%  , green, yellow, red);
-
 }
 hr{
   width: 95%;
@@ -44,13 +42,7 @@ hr{
   padding-top: 10px;
   color: rgba(216, 36, 36, 1);
 }
-.flag{
-  width: 60px;
-  height: 50px;
-  object-fit: cover;
-  margin-top: 5px;
-  border-radius: 5px;
-}
+
 .headContent{
   display: flex;
   flex-direction: row;

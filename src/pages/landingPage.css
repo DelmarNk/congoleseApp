@@ -12,7 +12,13 @@ body{
     background-repeat: no-repeat;
     background-size: 100vw 50%;
     filter: brightness(1.1);
-    background-image: url('https://i2.pickpik.com/photos/145/321/225/parrot-red-bird-colorful-thumb.jpg');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnh_N7eoo9G2n8hYTW-uR17swwMfHyxnjUEZAOTfwTMHU8khYxTeCU4ua-21l3hyn6gY&usqp=CAU'); */
+
+}
+.backgroundImage{
+    align-self: center;
+    width: 100vw;
+    height: 60vh;
 
 }
 
@@ -21,7 +27,7 @@ body{
     height: 100vh;
     color: white;
     position: absolute;
-    background-image: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,.7) 55%, rgba(0,0,0,.4) 65%, rgba(1,0,0,0) 70%)
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,.7) 42%, rgba(0,0,0,.4) 45%, rgba(1,0,0,0) 50%)
 }
 .tagline{
     color: rgba(217, 217, 217, .9);
