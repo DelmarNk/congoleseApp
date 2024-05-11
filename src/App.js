@@ -2,7 +2,7 @@ import './App.css';
 import Main from './components/Main';
 import { useState, useEffect } from 'react';
 import { jwtDecode } from 'jwt-decode';
-import { setUserToken, getUserToken, clearUserToken } from './utils/auth';
+import { setUserToken, getUserToken, clearUserToken } from './utils/Auth';
 
 function App() {
   const baseUrl = process.env.REACT_APP_API_URL
@@ -50,6 +50,7 @@ function App() {
  }
 
  async function getUser(){
+  const token = getUserToken()
   try{
     if(token){
       const user = jwtDecode(token)

@@ -3,7 +3,7 @@ const setUserToken = (token)=>{
 }
 
 const getUserToken = ()=>{
-    return localStorage.setItem('token')
+    return localStorage.getItem('token')
 }
 
 const clearUserToken = ()=>{
