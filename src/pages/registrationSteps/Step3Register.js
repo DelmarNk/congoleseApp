@@ -1,7 +1,10 @@
 
-function Step3Register() {
+function Step3Register({handleChange, userForm}) {
   return (
-    <div>Step3Register</div>
+    <div className="register3">
+        <h1 className="photo_tagline">To start using the app please choose a profile picture</h1>
+        
+    </div>
   )
 }
 

@@ -80,12 +80,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='header'>
-        <div className='headContent'>
-          <h1 className='appName'>CCN</h1>
-        </div>
-        <hr style={{borderColor: 'black'}}/>
-      </div>
+      
       <Main 
         handleLogin={loginUser}
         handleRegister={registerUser}

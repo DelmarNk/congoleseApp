@@ -8,8 +8,8 @@ function LandingPage() {
         <div className='empty'></div>
         <div className='landingContent'>
             <p className='tagline'>Want to be updated about all the congolese activities in Nanjing?</p>
-            <Link className='login' to={'/events'}>Login</Link>
-            <Link className='createAccount'>create an account</Link>
+            <Link className='login' to={'/login'}>Login</Link>
+            <Link className='createAccount' to={'/register'}>create an account</Link>
         </div>
     </div>
   )
