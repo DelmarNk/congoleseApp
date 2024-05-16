@@ -38,7 +38,6 @@ function Register({registerFunction}) {
     }
   return (
     <form onSubmit={handleSubmit} className="register_form">
-        <h1 style={{ marginTop: '400px', color: 'white' }}>step{step}</h1>
         {step == 1 ? <Step1Register handleChange={handleChange} userForm={userForm}/>
         : step == 2 ? <Step2Register handleChange={handleChange} userForm={userForm}/>
         : step == 3 ? <Step3Register handleChange={handleChange} userForm={userForm}/>
@@ -51,6 +50,8 @@ function Register({registerFunction}) {
         :
         <input type="submit" className="submitRegister" />
         }
+        
+        <h1 className="appN">CCN</h1>
     </form>
   )
 }

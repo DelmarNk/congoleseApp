@@ -1,0 +1,64 @@
+.register_form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border: solid 1px red;
+    
+}
+.name_tagline, .email_tagline, .number_tagline, .photo_tagline, .password_tagline{
+    color: rgba(217, 217, 217, 1);
+    font-size: 25px;
+    font-weight: 50;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30%;
+    margin-bottom: 50px;
+}
+.name_input, .email_input, .number_input, .photo_input, .password_input1, .password_input2{
+    height: 35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    padding-left: 15px;
+}
+
+.registerNext{
+    background-color: rgba(216, 36, 36, 1);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+    color: rgba(217, 217, 217, 1);
+    font-size: larger;
+    position: relative;
+    left: 35%;
+}
+
+.registerBack{
+    border: 1px solid rgba(216, 36, 36, 1);
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+    font-size: larger;
+    position: relative;
+    top: 3.8%;
+    left: 15%;
+}
+
+.appN{
+    position: absolute;
+    bottom: 10px;
+    color: rgba(216, 36, 36, 1);
+}
+
+@media screen and (max-width: 600px){
+    .register_form{
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 601px){
+    .register_form{
+      width: 500px;
+    }
+  }
