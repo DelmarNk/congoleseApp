@@ -18,5 +18,9 @@ This app can be used by anyone who wants to know about the Congolese events happ
 -Add search feature for events
 
 # Technologies Used
-- JavaScript back-end
-- React Front-end 
+- JavaScript
+- React
+- Node JS
+- MangoDB
+- Express JS
+  
